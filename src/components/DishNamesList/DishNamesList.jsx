@@ -1,7 +1,7 @@
-export const DishNamesList = ({ data }) => {
+export const DishNamesList = ({ dishes }) => {
   return (
     <ul>
-      {data.menu.map((dishName) => (
+      {dishes.menu.map((dishName) => (
         <li>{dishName.name}</li>
       ))}
     </ul>

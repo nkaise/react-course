@@ -1,9 +1,9 @@
-import { Restaurant } from "../Restaurant/Restaurant";
+import { Restaurants } from "../Restaurants/Restaurants";
 
-export const App = ({ data }) => {
+export const App = ({ restaurants }) => {
   return (
     <div>
-      <Restaurant data={data} />
+      <Restaurants restaurants={restaurants} />
     </div>
   );
 };

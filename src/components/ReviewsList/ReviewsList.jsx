@@ -1,7 +1,7 @@
-export const ReviewsList = ({ data }) => {
+export const ReviewsList = ({ reviews }) => {
   return (
     <ul>
-      {data.reviews.map((review) => (
+      {reviews.reviews.map((review) => (
         <li>{review.text}</li>
       ))}
     </ul>

@@ -5,6 +5,6 @@ import { restaurants } from "../materials/mock.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App data={restaurants} />
+    <App restaurants={restaurants} />
   </StrictMode>,
 );

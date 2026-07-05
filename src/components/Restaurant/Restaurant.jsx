@@ -1,16 +1,16 @@
 import { DishNamesList } from "../DishNamesList/DishNamesList";
 import { ReviewsList } from "../ReviewsList/ReviewsList";
 
-export const Restaurant = ({ data }) => {
+export const Restaurant = ({ restaurants }) => {
   return (
     <div>
-      {data.map((restaurant, index) => (
+      {restaurants.map((restaurant, index) => (
         <>
-          <h1>{restaurant.name}</h1>
+          <h2>{restaurant.name}</h2>
           <h3>Меню</h3>
-          <DishNamesList data={data[index]} />
+          <DishNamesList dishes={restaurants[index]} />
           <h3>Отзывы</h3>
-          <ReviewsList data={data[index]} />
+          <ReviewsList reviews={restaurants[index]} />
         </>
       ))}
     </div>
