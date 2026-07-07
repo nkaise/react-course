@@ -14,8 +14,3 @@ export const ReviewCounter = () => {
     />
   );
 };
-
-// const increment = useCallback(
-//   () => setValue((currentValue) => Math.min(currentValue + 1, max)),
-//   [max],
-// );
