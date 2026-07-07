@@ -1,9 +1,14 @@
+import { DishItem } from "../DishItem/DishItem";
+
 export const DishNamesList = ({ dishes }) => {
   return (
-    <ul>
-      {dishes.menu.map((dishName) => (
-        <li>{dishName.name}</li>
-      ))}
-    </ul>
+    <>
+      <h3>Меню</h3>
+      <ul>
+        {dishes.map((dishName) => (
+          <DishItem key={dishName.id} dishName={dishName.name} />
+        ))}
+      </ul>
+    </>
   );
 };

@@ -1,9 +1,12 @@
 export const ReviewsList = ({ reviews }) => {
   return (
-    <ul>
-      {reviews.reviews.map((review) => (
-        <li>{review.text}</li>
-      ))}
-    </ul>
+    <>
+      <h3>Отзывы</h3>
+      <ul>
+        {reviews.map((review) => (
+          <li key={review.id}>{review.text}</li>
+        ))}
+      </ul>
+    </>
   );
 };
