@@ -2,6 +2,7 @@ import { useState } from "react";
 import { DishNamesList } from "../DishNamesList/DishNamesList";
 import { ReviewsList } from "../ReviewsList/ReviewsList";
 import { RestaurantDetails } from "../RestaurantDetails/RestaurantDetails";
+import { ReviewForm } from "../ReviewForm/ReviewForm";
 
 export const Restaurant = ({ restaurants }) => {
   const [visibleRestaurant, setVisibleRestaurant] = useState(restaurants[0]);
@@ -23,6 +24,7 @@ export const Restaurant = ({ restaurants }) => {
         menu={visibleRestaurant.menu}
         reviews={visibleRestaurant.reviews}
       />
+      <ReviewForm />
     </div>
   );
 };
