@@ -5,7 +5,7 @@ export const DishNamesList = ({ dishes }) => {
     <>
       <h3>Меню</h3>
       <ul>
-        {dishes.menu.map((dishName) => (
+        {dishes.map((dishName) => (
           <DishItem key={dishName.id} dishName={dishName.name} />
         ))}
       </ul>
