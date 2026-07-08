@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 
-const INITIAL_STATE = { name: "", text: "", rate: "", clear: "" };
+const INITIAL_STATE = { name: "", text: "", rate: 1, clear: "" };
 
 const SET_NAME_ACTION = "SET_NAME_ACTION";
 const SET_TEXT_ACTION = "SET_TEXT_ACTION";

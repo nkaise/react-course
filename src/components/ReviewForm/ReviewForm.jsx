@@ -7,7 +7,7 @@ export const ReviewForm = () => {
   const { name, text, rate } = form;
 
   return (
-    <form>
+    <form onSubmit={(event) => event.preventDefault()}>
       <div>
         <label>
           Имя
@@ -27,11 +27,10 @@ export const ReviewForm = () => {
         </label>
       </div>
       <div>
-        <label>Рейтинг</label>
-        <ReviewCounter
-          value={rate}
-          onChange={(event) => setRate(event.target.value)}
-        />
+        <label>
+          Рейтинг
+          <ReviewCounter value={rate} onChange={setRate} />
+        </label>
       </div>
       <button type="reset" onClick={(event) => setClear(event.target.value)}>
         Очистка
