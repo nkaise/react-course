@@ -1,0 +1,22 @@
+.reviewName {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.reviewItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}

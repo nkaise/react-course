@@ -1,0 +1,9 @@
+.footer {
+  background: #202528;
+}
+
+.footerContainer {
+  max-width: 1314px;
+  margin: 0 auto;
+  padding: 10px 30px;
+}

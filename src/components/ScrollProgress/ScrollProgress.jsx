@@ -25,7 +25,7 @@ export const ScrollProgress = () => {
         left: 0,
         height: "5px",
         width: `${progress}%`,
-        backgroundColor: "blue",
+        backgroundColor: "#dcc7b1",
       }}
     />
   );

@@ -1,0 +1,29 @@
+.counterBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.btn {
+  background: #f3e5d6;
+  padding: 10px 17px;
+  border-radius: 50%;
+}
+
+.btnDark {
+  background-color: #3a322c;
+}
+
+.span {
+  color: #000000;
+}
+
+.spanDark {
+  color: #ffffff;
+}
+
+.count {
+  width: 30px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
