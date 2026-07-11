@@ -19,6 +19,7 @@ export const Restaurant = ({ restaurants }) => {
         </button>
       ))}
       <RestaurantDetails
+        id={visibleRestaurant.id}
         name={visibleRestaurant.name}
         menu={visibleRestaurant.menu}
         reviews={visibleRestaurant.reviews}
