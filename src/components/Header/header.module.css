@@ -1,6 +1,8 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 10px 30px;
   margin-bottom: 30px;
   box-shadow: 2px 0 12px rgba(0, 0, 0, 0.12);
@@ -22,6 +24,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
+  min-height: 60px;
+  width: 140px;
   background: #ffffff;
   outline: 1px solid #3a322c;
   padding: 10px;
@@ -31,4 +36,10 @@
 .buttonDark {
   background: #3a322c;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
 }

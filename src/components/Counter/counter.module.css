@@ -1,7 +1,7 @@
 .counterBlock {
   display: flex;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 0;
 }
 
 .btn {
@@ -26,4 +26,10 @@
   width: 30px;
   text-align: center;
   font-variant-numeric: tabular-nums;
+}
+
+@media screen and (min-width: 768px) {
+  .counterBlock {
+    column-gap: 30px;
+  }
 }
