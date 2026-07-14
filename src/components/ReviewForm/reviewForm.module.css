@@ -20,13 +20,6 @@
   border-radius: 5px;
 }
 
-.button {
-  outline: 1px solid #3a322c;
+.reviewBtn {
   padding: 10px;
-  border-radius: 10px;
-}
-
-.buttonDark {
-  background: #3a322c;
-  color: #ffffff;
 }

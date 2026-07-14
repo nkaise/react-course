@@ -5,12 +5,10 @@ import { Button } from "../Button/Button";
 import { useContext } from "react";
 import { ThemeContext } from "../ThemeProvider";
 import { UserContext } from "../UserProvider";
-import classNames from "classnames";
 
 export const ReviewForm = () => {
   const { form, setName, setRate, setText, setClear } = useForm();
   const { name, text, rate } = form;
-  const { theme } = useContext(ThemeContext);
   const { user } = useContext(UserContext);
 
   if (!user) {
@@ -46,9 +44,7 @@ export const ReviewForm = () => {
         </label>
       </div>
       <Button
-        className={classNames(styles.button, {
-          [styles.buttonDark]: theme === "dark",
-        })}
+        className={styles.reviewBtn}
         type={"reset"}
         onClick={(event) => setClear(event.target.value)}
         text={"Очистить форму"}
