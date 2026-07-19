@@ -1,0 +1,17 @@
+.counterBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 0;
+}
+
+.count {
+  width: 30px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+@media screen and (min-width: 768px) {
+  .counterBlock {
+    column-gap: 30px;
+  }
+}

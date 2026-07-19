@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.headerBlocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.headerTitle {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+}

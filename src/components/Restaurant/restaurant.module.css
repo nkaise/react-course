@@ -1,0 +1,22 @@
+.restaurantBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.restaurantBtn {
+  flex-grow: 1;
+  font-weight: 500;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.12);
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurantBlock {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
